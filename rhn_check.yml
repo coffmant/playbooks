@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: Development:&Non-Publishing
   tasks:
     - name: Run rhn_check on all hosts
       command: /usr/sbin/rhn_check
