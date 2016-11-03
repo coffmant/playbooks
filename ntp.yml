@@ -1,0 +1,8 @@
+---
+-  hosts: Development
+   tasks:
+     -  name: Make sure NTP is started up
+        service:
+           name: ntpd
+           enabled: true
+           state: started
