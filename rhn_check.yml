@@ -1,5 +1,5 @@
 ---
 - hosts: *
-    tasks:
+  tasks:
     - name: Run rhn_check on all hosts
       command: /usr/sbin/rhn_check
