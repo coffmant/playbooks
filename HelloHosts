@@ -1,0 +1,8 @@
+---
+- name: Hello Hosts
+  hosts: all
+ 
+  tasks:
+ 
+  - name: Hello
+    shell: echo "Hello - this host is responding"
