@@ -1,5 +1,8 @@
 ---
-- hosts: '{{ host }}'
+- name: Kernel Release
+  hosts: all
+  
   tasks:
+  
     - name: Display kernel version
       debug: msg={{ ansible_kernel }}
