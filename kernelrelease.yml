@@ -5,5 +5,4 @@
   tasks:
   
     - name: Display Hostname and kernel version
-      debug: msg={{ name }}
       debug: msg={{ ansible_kernel }}
