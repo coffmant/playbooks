@@ -1,0 +1,8 @@
+
+
+
+---
+- hosts: '{{ host }}'
+  tasks:
+    - name: Run rhn_check on all hosts
+      command: /usr/sbin/rhn_check
