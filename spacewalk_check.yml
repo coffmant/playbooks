@@ -1,8 +1,9 @@
-
-
-
 ---
-- hosts: '{{ host }}'
+- name: Spacewalk Check-in
+  hosts: all
+ 
   tasks:
-    - name: Run rhn_check on all hosts
-      command: /usr/sbin/rhn_check
+ 
+  - name: Run rhn_check
+    command: /usr/sbin/rhn_check
+    
