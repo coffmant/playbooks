@@ -1,0 +1,11 @@
+---
+- hosts: testgroup
+  tasks:
+    - name: Install katello-host-tools-tracer
+      dnf:
+              name: "katello-host-tools-tracer.noarch"
+              state: present
+    - name: Fully patch the system
+      dnf:
+              name: "*"
+              state: latest
